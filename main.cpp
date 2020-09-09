@@ -24,7 +24,16 @@ int main()
         getline(cin,item);
         list.push_back(item);
     }
+
   }while( input != 'q' && input != 'Q' );
+
+  if( input == 'q' || input == 'Q')
+  {
+    for(int i = 0; i < (int)list.size(); i++)
+    {
+      cout << i + 1 << ": " << list[i] << endl;
+    }
+  }
     
   return 0;
 }
